@@ -6,7 +6,7 @@
 /*   By: mmaidel- <mmaidel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:30:03 by mmaidel-          #+#    #+#             */
-/*   Updated: 2022/11/13 05:28:44 by mmaidel-         ###   ########.fr       */
+/*   Updated: 2022/11/13 05:47:21 by mmaidel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 # define PIPEX_H
 # include "../libft/libft.h"
 # include <fcntl.h>
-# include <fcntl.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/wait.h>
-# include <unistd.h>
 # include <unistd.h>
 
 # define ERROR 1

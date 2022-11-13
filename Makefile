@@ -3,10 +3,10 @@ HEADER =    -I ./includes
 SRC_DIR =   ./sources
 OBJ_DIR =	./objects
 LIBFT 	=	./libft/libft.a
-SRC_FILES =   	main.c pipex.c utils.c \
-				parse.c
+SRC_FILES =   	pipex.c utils.c handle_errors.c \
+				exec_pipe.c parse_pipe.c
 
-CC =		cc 
+CC =		gcc 
 
 CFLAGS =	-Wall -Wextra -Werror
 

@@ -6,20 +6,19 @@
 /*   By: mmaidel- <mmaidel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:29:55 by mmaidel-          #+#    #+#             */
-/*   Updated: 2022/11/14 20:55:05 by mmaidel-         ###   ########.fr       */
+/*   Updated: 2022/11/15 02:58:23 by mmaidel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	main(int argc, char *argv[], char *envp[])
+void	exec_pipex(int argc, char *argv[], char *envp[])
 {
-	check_arguments(argc, argv);
-	int input;
-	int output;
-	int pipefd[2];
-	pid_t pid;
-	int status;
+	int		input;
+	int		output;
+	int		pipefd[2];
+	pid_t	pid;
+	int		status;
 
 	if (argc == 5)
 	{
@@ -40,4 +39,11 @@ int	main(int argc, char *argv[], char *envp[])
 	}
 	else
 		entry_error();
+}
+
+int	main(int argc, char *argv[], char *envp[])
+{
+	check_arguments(argc, argv);
+	exec_pipex(argc, argv, envp);
+	return (0);
 }

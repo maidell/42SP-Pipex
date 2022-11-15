@@ -6,7 +6,7 @@
 /*   By: mmaidel- <mmaidel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:30:03 by mmaidel-          #+#    #+#             */
-/*   Updated: 2022/11/13 05:47:21 by mmaidel-         ###   ########.fr       */
+/*   Updated: 2022/11/15 02:55:39 by mmaidel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,7 @@ void	invalid_msg(void);
 void	command_error(char **cmd);
 
 int		openfile(char *filename, int mode);
+
+void	exec_pipex(int argc, char *argv[], char *envp[]);
 
 #endif

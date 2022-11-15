@@ -6,7 +6,7 @@
 /*   By: mmaidel- <mmaidel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 04:08:41 by mmaidel-          #+#    #+#             */
-/*   Updated: 2022/11/13 05:35:57 by mmaidel-         ###   ########.fr       */
+/*   Updated: 2022/11/15 02:46:44 by mmaidel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,33 +47,3 @@ void	parent(char *argv[], char *envp[], int *pipefd)
 	close(pipefd[OUT]);
 	execute_cmd(argv[3], envp);
 }
-
-//void exec_pipe (int argc, char *argv[], char *envp[])
-// {
-// int		input;
-// 	int		output;
-// 	int		pipefd[2];
-// 	pid_t	pid;
-// 	int		status;
-
-// 	if (argc == 5)
-// 	{
-// 		input = openfile(argv[1], IN);
-// 		output = openfile(argv[4], OUT);
-// 		dup2(input, STDIN_FILE);
-// 		dup2(output, STDOUT_FILE);
-// 		pipe (pipefd);
-// 		if (input < 0)
-// 			invalid_msg();
-// 		if (output < 0)
-// 			entry_error();
-// 		pid = fork();
-// 		if (pid == 0)
-// 			child(argv, envp, pipefd);
-// 		waitpid(pid, &status, 0);
-// 		parent(argv, envp, pipefd);
-// 	}
-// 	else
-// 		entry_error();
-// }
-

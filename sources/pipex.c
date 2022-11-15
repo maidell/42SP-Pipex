@@ -6,20 +6,15 @@
 /*   By: mmaidel- <mmaidel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 16:29:55 by mmaidel-          #+#    #+#             */
-/*   Updated: 2022/11/13 05:26:12 by mmaidel-         ###   ########.fr       */
+/*   Updated: 2022/11/15 02:48:32 by mmaidel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-
-
 int	main(int argc, char *argv[], char *envp[])
 {
-
     check_arguments(argc, argv);
-
-
 	int		input;
 	int		output;
 	int		pipefd[2];
